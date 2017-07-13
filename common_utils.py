@@ -1,9 +1,13 @@
 import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-import multiprocessing as mp
+
 
 def normalize(x):
+    """
+    Normalization (x) / |x| function
+    :param x: Vector to normalize
+    :return: Normalized vector
+    """
     return x / np.linalg.norm(x)
+
 
 epsilon = 0.00001
